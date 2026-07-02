@@ -1,15 +1,12 @@
 ﻿<!doctype html>
-<html>
+<html lang="vi">
   <head>
     <title>Phú Thọ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
+    <link rel="stylesheet" href="Style.css" />
     
 <link rel="shortcut icon" href="./Logo/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./Logo/android-chrome-512x512.png" type="image/x-icon">
@@ -18,30 +15,14 @@
 <link rel="shortcut icon" href="./Logo/favicon-16x16.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
-    <a href="#hero" class="scroll-top-button">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-    <aside id="backToTop">
-      <a href="#hero" aria-label="Lên đầu trang">
-        <span class="arrow arrow-1"></span>
-        <span class="arrow arrow-2"></span>
-      </a>
-    </aside>
-    <header class="box w3-right neon-box2" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Phú Thọ!</p>
-    </header>
+  <body class="w3-light-grey">
     <header class="w3-top">
-      <nav class="w3-bar w3-white w3-padding w3-card">
+      <nav class="w3-bar w3-white w3-padding w3-card" aria-label="Thanh điều hướng chính">
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Phú Thọ</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
           ❮
@@ -52,10 +33,6 @@
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -78,14 +55,8 @@
             <a href="https://giabao123123.github.io/trochoiphutho/">TRÒ CHƠI</a>
           </li>
         </ul>
-        <aside
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
-          class="w3-animate-left w3-hide-small neon-box"
-        >
-          <div class="menu-scroll">
+        <aside class="w3-animate-left w3-hide-small neon-box">
+          <div class="menu-scroll" role="list">
             <a href="#about" class="w3-bar-item w3-button"
               >LỊCH SỬ HÌNH THÀNH</a
             >
@@ -117,8 +88,42 @@
           </div>
         </aside>
       </nav>
+      <aside class="box w3-right neon-box2" aria-label="Lời chào">
+        <p class="text">Chào mừng đến với tỉnh Phú Thọ!</p>
+      </aside>
     </header>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu tỉnh Phú Thọ">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://tse4.mm.bing.net/th/id/OIP.2JG4xj0w39mOoijMvO_RlAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Trung du Bắc Bộ · Đất Tổ Vua Hùng</p>
+          <h1 class="hero-vl-title">Phú Thọ</h1>
+          <p class="hero-vl-sub">
+            Vùng đất cội nguồn của dân tộc Việt — nơi Đền Hùng linh thiêng,
+            Tín ngưỡng thờ cúng Hùng Vương được UNESCO vinh danh
+            và dòng sông Hồng ngàn đời bồi đắp phù sa cho cái nôi văn minh Lạc Việt.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>~5.926 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Hơn 2,5 triệu</span>
+              <small>Dân số</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Đền Hùng</span>
+              <small>Di sản UNESCO</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
           LỊCH SỬ HÌNH THÀNH
@@ -741,162 +746,162 @@
             {
               name: "Huyện Sông Lô",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/song-lo?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/song-lo?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "HuyệnVĩnh Tường ",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/vinh-tuong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/vinh-tuong?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Yên Lạc",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/yen-lac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/yen-lac?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bình Xuyên",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/binh-xuyen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/binh-xuyen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tam Đảo",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/tam-dao?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/tam-dao?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tam Dương",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/tam-duong-vinh-phuc?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/tam-duong-vinh-phuc?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lập Thạch",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/lap-thach?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/lap-thach?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Phúc Yên",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/phuc-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/phuc-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Vĩnh Yên",
               parent: "Tỉnh Vĩnh Phúc cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/vinh-yen?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/vinh-phuc/vinh-yen?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Sơn",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/tan-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/tan-son?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thanh Thuỷ",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-thuy?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lâm Thao",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/lam-thao?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/lam-thao?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thanh Sơn",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-son?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tam Nông",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/tam-nong-phu-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/tam-nong-phu-tho?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Cẩm Khê",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/cam-khe?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/cam-khe?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Yên Lập",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/yen-lap?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/yen-lap?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Phù Ninh",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/phu-ninh-phu-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/phu-ninh-phu-tho?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thanh Ba",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-ba?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/thanh-ba?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Hạ Hoà",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/ha-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/ha-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Đoan Hùng",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/doan-hung?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/doan-hung?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "thị xã Phú Thọ",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/phu-tho?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/phu-tho?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Việt Trì",
               parent: "Tỉnh Phú Thọ cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/phu-tho/viet-tri?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/phu-tho/viet-tri?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Thành phố Hòa Bình",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/hoa-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/hoa-binh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Đà Bắc",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/da-bac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/da-bac?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lương Sơn",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/luong-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/luong-son?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Kim Bôi",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/kim-boi?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/kim-boi?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Cao Phong",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/cao-phong?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/cao-phong?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Tân Lạc",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/tan-lac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/tan-lac?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Mai Châu",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/mai-chau?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/mai-chau?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lạc Sơn",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/lac-son?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/lac-son?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Yên Thủy",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/yen-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/yen-thuy?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Lạc Thủy",
               parent: "Tỉnh Hoà Bình cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/lac-thuy?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/hoa-binh/lac-thuy?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -6039,10 +6044,16 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    
+    <a href="#" class="scroll-top-button" aria-label="Lên đầu trang">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+    <aside id="backToTop">
+      <a href="#" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+    <script src="animations.js"></script>
   </body>
 </html>
-
-
-
-
-
